@@ -26,4 +26,5 @@ $$\text{Logarithmic Loss} = -\frac{1}{N} \sum_{i=1}^{N} \sum_{j=1}^{M} y_{ij} \c
 
 REGRESSION METRICS
 ------------------
-
+- Mean Absolute Error (MAE): calculates the average of the absolute differences between the predicted and actual values
+$$\text{MAE} = \frac{1}{N} \sum_{j=1}^{N} |y_j - \hat{y}_j|$$
