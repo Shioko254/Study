@@ -38,4 +38,12 @@ $$\text{RMSE} = \sqrt{\frac{\sum_{j=1}^{N} (y_{j} - \hat{y}_
 - Root Mean Squared Logarithmic Error (RMSLE): RMSLE is useful when the target variable spans a wide range of values such as prices or population. It penalizes underestimations more than overestimations.
 $$\text{RMSLE} = \sqrt{\frac{1}{N} \sum_{j=1}^{N} \left( \log(y_{j}+1) - \log(\hat{y}_
 {j}+1) \right)^{2}}$$
-- R-squared: 
+- R-squared: Represents the proportion of the variance in the dependent variable that is predictable from the independent variables.
+$$R^{2} = 1 - \frac{\sum_{j=1}^{n} (y_{j} - \hat{y}_{j})^{2}}{\sum_{j=1}^{n} (y_{j} - \bar{y})^{2}}$$
+
+
+CLUSTERING METRICS
+------------------
+- Silhouette Score: evaluates how well a data point fits within its assigned cluster considering how close it is to points in its own cluster (cohesion) and how far it is from points in other clusters (separation). A higher silhouette score (close to +1) shows well-clustered data while a score near -1 suggests that the data point is in the wrong cluster. Silhouette Score = (b-a) / max(a,b) ; with a, b is Average distance between a sample and all other points in the same/nearest cluster
+- Davies- Bouldin Index: measures the average similarity between each cluster and its most similar cluster
+$$\text{Davies-Bouldin Index} = \frac{1}{N} \sum_{i=1}^{N} \max_{i \neq j} \left( \frac{\sigma_{i} + \sigma_{j}}{d(c_{i}, c_{j})} \right)$$
