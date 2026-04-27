@@ -27,4 +27,15 @@ $$\text{Logarithmic Loss} = -\frac{1}{N} \sum_{i=1}^{N} \sum_{j=1}^{M} y_{ij} \c
 REGRESSION METRICS
 ------------------
 - Mean Absolute Error (MAE): calculates the average of the absolute differences between the predicted and actual values
-$$\text{MAE} = \frac{1}{N} \sum_{j=1}^{N} |y_j - \hat{y}_j|$$
+$$\text{MAE} = \frac{1}{N} \sum_{j=1}^{N} |y_j - \hat{y}_
+j|$$
+- Mean Squared Error (MSE): Caculate the average of the squared differences between the predicted and actual values. Squaring the differences ensures that larger errors are penalized more heavily helps in making it sensitive to outliers. This is useful when large errors are undesirable but it can be problematic when outliers are not relevant to the model’s purpose.
+$$\text{MSE} = \frac{1}{N} \sum_{j=1}^{N} (y_{j} - \hat{y}_
+{j})^{2}$$
+- Root Mean Squared Error (RMSE): is the square root of MSE, bring the metric back to the original scale of the data. It heavily penalizes larger errors and easy to know how much our predictions deviate from the actual values.
+$$\text{RMSE} = \sqrt{\frac{\sum_{j=1}^{N} (y_{j} - \hat{y}_
+{j})^{2}}{N}}$$
+- Root Mean Squared Logarithmic Error (RMSLE): RMSLE is useful when the target variable spans a wide range of values such as prices or population. It penalizes underestimations more than overestimations.
+$$\text{RMSLE} = \sqrt{\frac{1}{N} \sum_{j=1}^{N} \left( \log(y_{j}+1) - \log(\hat{y}_
+{j}+1) \right)^{2}}$$
+- R-squared: 
