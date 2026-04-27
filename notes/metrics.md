@@ -21,6 +21,8 @@ $$\text{Logarithmic Loss} = -\frac{1}{N} \sum_{i=1}^{N} \sum_{j=1}^{M} y_{ij} \c
     - False positive rate (FPR): FPR = FP / (FP + TN)
     - False negative rate (FNR): FNR = FN / (FN + TP)
 - ROC curve: It is a graphical representation of TPR and FPR at different classification thresholds. 
+- AUPR: Precision and Recall
+- AUPRO: For better deflect region
 - Confusion matrix: a N x N matrix, which show the numbers of classification for each classes or categories.
 
 
