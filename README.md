@@ -13,10 +13,3 @@ This repository is my personal study workspace for understanding project.
 - `practice/`: small practice scripts
 - `experiments/`: experiment logs and result summaries
 
-## Current status
-Day1:
-- Linux commands
-- Docker basic
-- Set up Git repository
-- Practiced add / commit / push / pull
-- Wrote initial READE
